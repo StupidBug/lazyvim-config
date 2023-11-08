@@ -1,6 +1,6 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
-
+--
 -- Switch input method when enter or leave insert mode
 vim.api.nvim_create_autocmd("InsertLeave", {
     callback = function()
