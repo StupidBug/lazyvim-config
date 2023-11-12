@@ -29,3 +29,9 @@ vim.g.mkdp_combine_preview = 1
 -- auto refetch combine preview contents when change markdown buffer
 -- only when g:mkdp_combine_preview is 1
 vim.g.mkdp_combine_preview_auto_refresh = 1
+
+-- =============================Vim keymap===============================================
+vim.keymap.set("v", "<C-b>", ":lua require('markdowny').bold()<cr>", { buffer = 0 })
+vim.keymap.set("v", "<C-i>", ":lua require('markdowny').italic()<cr>", { buffer = 0 })
+vim.keymap.set("v", "<C-k>", ":lua require('markdowny').link()<cr>", { buffer = 0 })
+vim.keymap.set("v", "<C-e>", ":lua require('markdowny').code()<cr>", { buffer = 0 })
